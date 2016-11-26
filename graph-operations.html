@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>图操作</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <table id="legend" class="table">
+    <tbody>
+      <tr>
+        <td><code class="red">Horrible</code></td>
+        <td><code class="orange">Bad</code></td>
+        <td><code class="yellow">Fair</code></td>
+        <td><code class="yellow-green">Good</code></td>
+        <td><code class="green">Excellent</code></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <table class="table table-bordered table-striped">
+    <tbody>
+      <tr>
+        <th>节点 / 边界管理</th>
+        <th>存储</th>
+        <th>增加顶点</th>
+        <th>增加边界</th>
+        <th>移除顶点</th>
+        <th>移除边界</th>
+        <th>查询</th>
+      </tr>
+      <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Adjacency_list">Adjacency list</a></td>
+        <td><code class="yellow">O(|V|+|E|)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="yellow">O(|V|+|E|)</code></td>
+        <td><code class="yellow">O(|E|)</code></td>
+        <td><code class="yellow">O(|V|)</code></td>
+      </tr>
+      <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Incidence_list">Incidence list</a></td>
+        <td><code class="yellow">O(|V|+|E|)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="yellow">O(|E|)</code></td>
+        <td><code class="yellow">O(|E|)</code></td>
+        <td><code class="yellow">O(|E|)</code></td>
+      </tr>
+      <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Adjacency_matrix">Adjacency matrix</a></td>
+        <td><code class="red">O(|V|^2)</code></td>
+        <td><code class="red">O(|V|^2)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="red">O(|V|^2)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="green">O(1)</code></td>
+      </tr>
+      <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Incidence_matrix">Incidence matrix</a></td>
+        <td><code class="red">O(|V|⋅|E|)</code></td>
+        <td><code class="red">O(|V|⋅|E|)</code></td>
+        <td><code class="red">O(|V|⋅|E|)</code></td>
+        <td><code class="red">O(|V|⋅|E|)</code></td>
+        <td><code class="red">O(|V|⋅|E|)</code></td>
+        <td><code class="yellow">O(|E|)</code></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

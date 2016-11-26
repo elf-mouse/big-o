@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>堆操作</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <table id="legend" class="table">
+    <tbody>
+      <tr>
+        <td><code class="red">Horrible</code></td>
+        <td><code class="orange">Bad</code></td>
+        <td><code class="yellow">Fair</code></td>
+        <td><code class="yellow-green">Good</code></td>
+        <td><code class="green">Excellent</code></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <table class="table table-bordered table-striped">
+    <tbody>
+      <tr>
+        <th>类型</th>
+        <th colspan="7">时间复杂度</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>Heapify</th>
+        <th>查找最大值</th>
+        <th>分离最大值</th>
+        <th>提升键</th>
+        <th>插入</th>
+        <th>删除</th>
+        <th>合并</th>
+      </tr>
+      <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (sorted)</a></td>
+        <td><code class="gray">N/A</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="red">O(n)</code></td>
+        <td><code class="red">O(n)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="red">O(m+n)</code></td>
+      </tr>
+      <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Linked_list">Linked List (unsorted)</a></td>
+        <td><code class="gray">N/A</code></td>
+        <td><code class="red">O(n)</code></td>
+        <td><code class="red">O(n)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="green">O(1)</code></td>
+      </tr>
+      <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Binary_heap">Binary Heap</a></td>
+        <td><code class="yellow">O(n)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="yellow-green">O(log(n))</code></td>
+        <td><code class="yellow-green">O(log(n))</code></td>
+        <td><code class="yellow-green">O(log(n))</code></td>
+        <td><code class="yellow-green">O(log(n))</code></td>
+        <td><code class="red">O(m+n)</code></td>
+      </tr>
+      <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Binomial_heap">Binomial Heap</a></td>
+        <td><code class="gray">N/A</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="yellow-green">O(log(n))</code></td>
+        <td><code class="yellow-green">O(log(n))</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="yellow-green">O(log(n))</code></td>
+        <td><code class="yellow-green">O(log(n))</code></td>
+      </tr>
+      <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Fibonacci_heap">Fibonacci Heap</a></td>
+        <td><code class="gray">N/A</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="yellow-green">O(log(n))</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="green">O(1)</code></td>
+        <td><code class="yellow-green">O(log(n))</code></td>
+        <td><code class="green">O(1)</code></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
